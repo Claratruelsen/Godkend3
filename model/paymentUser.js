@@ -1,8 +1,8 @@
 const User= require("./user");
 
 class paymentUser extends User {
-    constructor(creditCardNumber, creditCardExpiration, creditCardCVC,  userID, firstName, lastName, age, gender, interest, match, image, password){
-        super(userID, firstName, lastName, age, gender, interest, match, image, password);
+    constructor(creditCardNumber, creditCardExpiration, creditCardCVC, firstName, lastName, age, gender, interest, match, image, password){
+        super(firstName, lastName, age, gender, interest, match, image, password);
             this.creditCardNumber=creditCardNumber;
             this.creditCardExpiration=creditCardExpiration;
             this.creditCardCVC=creditCardCVC;

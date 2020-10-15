@@ -1,9 +1,8 @@
 class match{
-    constructor(user1, user2){ 
-        this.user1=user1;
-        this.user2=user2;
+    constructor(match){ 
+        this.match=match;
     }
 }
-
+module.exports = match;
 // serverne skal kunne hnete match klassen
 

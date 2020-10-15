@@ -1,8 +1,8 @@
 const User= require("./user");
 
 class freeUser extends User{
-    constructor(userID, firstName, lastName, age, gender, interest, match, image, password){
-        super(userID, firstName, lastName, age, gender, interest, match, image, password);
+    constructor(firstName, lastName, age, gender, interest, match, image, password){
+        super(firstName, lastName, age, gender, interest, match, image, password);
     }
 }
 
