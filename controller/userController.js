@@ -1,6 +1,6 @@
 const express = require ("express");
 const router = express.Router();
-const users = require('../hardUser')
+const users = require("./hardUser");
 
 router
 .route("/")
@@ -18,5 +18,5 @@ module.exports=router;
 // hvordan får jeg den til at hive et specifikt ID? 
 
 
-
+//stringify så den kan sendes 
 

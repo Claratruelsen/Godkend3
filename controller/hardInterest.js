@@ -1,4 +1,4 @@
-const interest= require("./model/interest")
+const interest= require("../model/interest")
 
 let userInterestArray = [] 
 var user1 = new interest("hetro", "fishing, cooking, working out");

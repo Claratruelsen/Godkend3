@@ -1,6 +1,6 @@
-
-const paymentUser= require("./model/user")
-const freeUser= require("./model/user")
+const User= require("./model/user");
+const paymentUser= require("./model/paymentUser")
+const freeUser= require("./model/freeUser")
 
 // hvorfor virker dette lort ikke ? 
 //var img1= document.createElement("img");
@@ -22,7 +22,7 @@ let user4= new paymentUser("**** **** **** ****", "03/25", "***", user4, "Nina",
 let user5= new freeUser(user5, "Mads", "Sigurdson", 30, "male", user5.interest, "match", "img5", "psw5");
 let userArray=[user1, user2, user3, user4, user5];
 
-module.exports = userArray
+module.exports = userArray;
 
 // kan man bruge GetUserId? eller skal man bare bruge id= eller userId= ...??
 // hvad skal jeg skrive under match og image.....

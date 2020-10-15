@@ -13,18 +13,18 @@ const port= process.env.port || 3000;
 
 //henter controller fra sti
 const userController = require('./controller/userController')
-const protectedController = require('./controller/Protectedcontroller')
-const loginController = require('./controller/loginController')
+//const protectedController = require('./controller/Protectedcontroller')
+//const loginController = require('./controller/loginController')
 
 //henter middleware
-const ensureToken = require('./Middleware/ensureToken')
+//const ensureToken = require('./Middleware/ensureToken')
 //read endpoint på routen '/'
 server.get('/', userController)
 
-server.get('/protected', ensureToken,  protectedController)
+//server.get('/protected', ensureToken,  protectedController)
 
 
-server.post('/login', loginController)
+//server.post('/login', loginController)
 
 
 //const interest= require("./controller/interestController.js");
