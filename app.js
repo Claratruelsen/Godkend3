@@ -4,19 +4,13 @@ const app=express();
 const port= process.env.port || 3000;
 
 const users = require("./controller/userController.js");
-app.get("/users", (req, res) => {
-    res.end(JSON.stringify(users))
-});
+app.use("/users", users)
 
 const interest= require("./controller/interestController.js");
-app.get("/interest", (req, res) => {
-    res.end(JSON.stringify(interest))
-});
+app.use("/interest", interest)
 
 const match= require("./controller/matchController.js");
-app.create("/match", (req, res) => { //create er en del af post
-    res.JSON("message", "You have created a new match")
-});
+app.use("/match", match)
 
 
 //server aktiveres
