@@ -1,13 +1,8 @@
-const express = require ("express");
-const router = express.Router();
+const interets = require("./hardInterest");
 
-router
-.route("/")
-.get((req, res)=>{
+function interestController(req, res) {
+    res.end(JSON.stringify(interest))
+};
 
-res.send("interesser for brugID...") // her skriver man hvad den skal sende afsted
+module.exports=interestController;
 
-})
-.post((req, res)=>{});
-
-module.exports=router;

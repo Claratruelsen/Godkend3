@@ -9,5 +9,3 @@ var user5 = new interest("homosexual", "makeup, working out, reading");
 userInterestArray=[user1, user2, user3, user4, user5];
 
 module.exports = userInterestArray
-
-// denne side skal forbindes med usersnes....
