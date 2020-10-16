@@ -7,6 +7,7 @@ function userController(req, res) {
 module.exports=userController;
 
 
+
 /*
 const users = require("./hardUser");
 const express = require("express");
@@ -21,11 +22,6 @@ router.get ("/", function (req, res) {
 module.exports=users;
 
 
-   
-// her skriver man hvad den skal sende afsted
-// HVORDAN får jeg den til at hive informationen fra den user jeg øsnker? 
-// hvordan får jeg dette dokument til at snakke sammen med min user.js fil
-// hvordan får jeg den til at hive et specifikt ID? 
 
 */
 

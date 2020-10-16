@@ -3,6 +3,8 @@ const express= require ("express");
 const app=express();
 const port= process.env.port || 3001;
 
+
+// mine GET requests: 
 const users = require("./controller/userController.js");
 app.use("/users", users)
 
