@@ -1,5 +1,4 @@
-const interets = require("./hardInterest");
-
+const interest = require("./hardInterest");
 function interestController(req, res) {
     res.end(JSON.stringify(interest))
 };
